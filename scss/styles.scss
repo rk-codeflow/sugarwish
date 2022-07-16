@@ -22,6 +22,7 @@ html {
 $primary-col: #D2232A;
 $dark-col: #2D3333;
 $dark-gray: #969696;
+$med-gray: #EBEBEB;
 $light-gray: #F9F9FB;
 
 // mixins
@@ -142,19 +143,21 @@ nav {
 
 // Main Content
 .details {
-    .shopping-cart {
-        //shopping cart
-        .shopping-cart-title {
-            display: flex;
-            align-items: center;
-            column-gap: 5px;
-            margin-bottom: 1rem;
 
-            .sec-title {
-                color: $dark-gray;
-            }
+    .shopping-cart-title {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        margin-bottom: 1rem;
+
+        .sec-title {
+            color: $dark-gray;
         }
+    }
 
+    //shopping cart
+    .shopping-cart {
+        
         // receipient
         .receipient {
             @include flex-props;
@@ -163,6 +166,7 @@ nav {
             border-bottom: 1px solid $dark-gray;
             background: $light-gray;
             padding-inline: 10px;
+            flex-wrap: wrap;
 
             .cookie-count {
                 @include flex-props;
@@ -173,4 +177,44 @@ nav {
             }
         }
     }
+
+    // table Css
+    .shopping-cart-table {
+        // background: $med-gray;
+        padding: 1rem 1.5rem;
+        border: 1px solid $med-gray;
+
+         thead {
+            th {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $dark-gray;
+                font-size: 14px;
+            }
+         }
+
+         tbody {
+            td {
+                color: $dark-col;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .options {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: $primary-col;
+                    text-decoration: none;
+                }
+            }
+         }
+    }
+
+    .note {
+        font-size: 12px;
+        line-height: 18px;
+        color: $dark-gray;
+        margin-left: 1rem;
+     }
 }
