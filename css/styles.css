@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h4, h5, p {
+  margin-bottom: 0;
+}
+
+.font-monte {
+  font-family: "Montserrat", sans-serif;
+}
+
+.primary-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.sec-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.tert-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #D2232A;
+}
+
+.ptb-32 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.d-gray {
+  color: #969696;
+}
+
+.dark {
+  color: #2D3333;
+}
+
+.primary-col {
+  color: #D2232A;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+nav img {
+  width: 85%;
+  max-width: 120px;
+}
+nav ul {
+  width: 100%;
+  align-items: center;
+}
+nav ul li:not(:first-child) {
+  margin-left: 1rem;
+}
+nav ul li:first-child a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+nav ul li:first-child a .nav-link-item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+nav ul i {
+  color: #D2232A;
+}
+nav .navbar-brand {
+  margin-right: 0;
+}
+nav .navbar-brand picture {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  color: white;
+}
+nav .navbar-toggler {
+  border-color: transparent !important;
+  color: white !important;
+  padding: 0;
+}
+
+.details .shopping-cart .shopping-cart-title {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-bottom: 1rem;
+}
+.details .shopping-cart .shopping-cart-title .sec-title {
+  color: #969696;
+}
+.details .shopping-cart .receipient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+  background: #F9F9FB;
+  padding-inline: 10px;
+}
+.details .shopping-cart .receipient .cookie-count {
+  display: flex;
+  align-items: center;
+}
+.details .shopping-cart .receipient .cookie-count img {
+  width: 80px;
+}/*# sourceMappingURL=styles.css.map */

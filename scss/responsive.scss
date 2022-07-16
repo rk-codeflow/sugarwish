@@ -1,0 +1,33 @@
+// Variables
+$primary-col: #D2232A;
+$dark-col: #2D3333;
+$dark-gray: #969696;
+$light-gray: #F9F9FB;
+
+// Nav section 
+
+
+@media screen and (max-width: 991px) {
+    nav {
+        background: $primary-col;
+
+        ul {
+
+         li:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        background: $light-gray;
+        
+        .navbar-brand {
+            i {
+                display: none;
+            }
+        }
+    }
+}

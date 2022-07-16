@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+  nav {
+    background: #D2232A;
+  }
+  nav ul li:not(:first-child) {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav {
+    background: #F9F9FB;
+  }
+  nav .navbar-brand i {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */
