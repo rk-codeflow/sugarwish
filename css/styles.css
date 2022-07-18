@@ -281,12 +281,17 @@ nav .navbar-toggler {
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
-.details-sec .bill p {
+.details-sec .bill .bill-shipping p {
   color: #686868;
+  font-size: 14px;
+  line-height: 20px;
 }
-.details-sec .bill h6 {
-  font-size: 18px;
-  font-weight: 600;
+.details-sec .bill .bill-total p {
+  font-size: 14px;
+  color: #ABABAB;
+}
+.details-sec .bill .bill-total h6 {
+  color: #060606;
 }
 
 .mobile-view-table {

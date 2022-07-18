@@ -352,14 +352,24 @@ nav {
         border-top: 1px solid $primary-col;
         padding-top: 1rem;
         margin-bottom: 1rem;
-        
-        p {
-            color: #686868;
+
+        .bill-shipping {
+            p {
+                color: #686868;
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
 
-        h6 {
-            font-size: 18px;
-            font-weight: 600;
+        .bill-total {
+            p {
+                font-size: 14px;
+                color: #ABABAB;
+            }
+
+            h6 {
+                color: #060606;
+            }
         }
     }
 }
