@@ -31,3 +31,20 @@ $light-gray: #F9F9FB;
         }
     }
 }
+
+// main section
+.details {
+    @media screen and (max-width: 767px) {
+        .shopping-cart-title {
+            justify-content: space-between;
+        }
+
+        .receipient {
+            .receipient-count {
+                margin-left: 5rem;
+                margin-bottom: 0.5rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+}

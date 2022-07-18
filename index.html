@@ -29,7 +29,7 @@
         <a class="navbar-brand" href="#">
             <picture>
                 <source media="(max-width:992px)" srcset="./img/white-log.png">
-                <img src="./img/logo.png" alt="This is the website logo">
+                <img class="desktop-logo" src="./img/logo.png" alt="This is the website logo">
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
 
@@ -84,7 +84,7 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg"></i>
                     </a>
                 </li>
             </ul>
@@ -93,10 +93,10 @@
     <!-- navbar starts ends -->
 
     <!-- main content start -->
-    <section class="details ptb-32">
+    <section class="details">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-lg-8 ptb-32">
                     <div class="shopping-cart-title">
                         <h4 class="font-monte primary-title">Shopping Cart</h4>
                         <span class="sec-title">(10 items)</span>
@@ -117,25 +117,29 @@
                                 </div>
                             </div>
 
-                            <p>
+                            <p class="receipient-count">
                                 <span class="primary-col">6</span> 
                                 <span class="dark">recipients</span> 
                             </p>
 
-                            <p>
+                            <p class="d-none d-md-block">
                                 <span class="primary-col">$131.88</span> 
                                 <span class="dark">total</span>
                             </p>
+
+                            <a href="#" class="d-block d-md-none">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
                         </div>
 
-                        <!-- table -->
-                        <table class="table table-borderless shopping-cart-table">
+                        <!-- table 1 -->
+                        <table class="table table-borderless shopping-cart-table d-none d-md-block">
                             <thead>
                               <tr>
                                 <th>card</th>
                                 <th>recipient</th>
-                                <th>email</th>
                                 <th>date</th>
+                                <th>email</th>
                                 <th>ship to ca</th>
                                 <th class="text-center">options</th>
                               </tr>
@@ -257,6 +261,122 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <!-- responsive table -->
+                        <table class="table shopping-cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">card</th>
+                                    <th scope="col">recipient</th>
+                                </tr>
+                              </thead>
+
+                              <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="./img/b1.png" alt="birthday card">
+                                            <p>Deliver on: 12/23/2020</p>
+                                            <span class="small" style="color: #969696;">Ship to Canada</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>
+                                            <p>Jane Campion</p>
+                                            <span class="small" style="color: #969696;margin-bottom: 8px;display:inline-block;">Send by messaging</span>
+                                            <div class="options">
+                                                <a href="#">Preview</a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="./img/b1.png" alt="birthday card">
+                                            <p>Deliver on: 12/23/2020</p>
+                                            <span class="small" style="color: #969696;">Ship to Canada</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>
+                                            <p>Jane Campion</p>
+                                            <span class="small" style="color: #969696;margin-bottom: 8px;display:inline-block;">Send by messaging</span>
+                                            <div class="options">
+                                                <a href="#">Preview</a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="./img/b1.png" alt="birthday card">
+                                            <p>Deliver on: 12/23/2020</p>
+                                            <span class="small" style="color: #969696;">Ship to Canada</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>
+                                            <p>Jane Campion</p>
+                                            <span class="small" style="color: #969696;margin-bottom: 8px;display:inline-block;">Send by messaging</span>
+                                            <div class="options">
+                                                <a href="#">Preview</a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="./img/b1.png" alt="birthday card">
+                                            <p>Deliver on: 12/23/2020</p>
+                                            <span class="small" style="color: #969696;">Ship to Canada</span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div>
+                                            <p>Jane Campion</p>
+                                            <span class="small" style="color: #969696;margin-bottom: 8px;display:inline-block;">Send by messaging</span>
+                                            <div class="options">
+                                                <a href="#">Preview</a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                              </tbody>
+                        </table>
                     </div>
 
                     <!-- shopping cart section 2 -->
@@ -274,19 +394,23 @@
                                 </div>
                             </div>
 
-                            <p>
+                            <p class="receipient-count">
                                 <span class="primary-col">3</span> 
                                 <span class="dark">recipients</span> 
                             </p>
 
-                            <p>
+                            <p class="d-none d-md-block">
                                 <span class="primary-col">$131.88</span> 
                                 <span class="dark">total</span>
                             </p>
+
+                            <a href="#" class="d-block d-md-none">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
                         </div>
 
                         <!-- table -->
-                        <table class="table table-borderless shopping-cart-table">
+                        <table class="table table-borderless shopping-cart-table d-none d-md-block">
                             <thead>
                               <tr>
                                 <th>card</th>
@@ -374,19 +498,23 @@
                                 </div>
                             </div>
 
-                            <p>
+                            <p class="receipient-count">
                                 <span class="primary-col">1</span> 
                                 <span class="dark">recipients</span> 
                             </p>
 
-                            <p>
+                            <p class="d-none d-md-block">
                                 <span class="primary-col">$76.88</span> 
                                 <span class="dark">total</span>
                             </p>
+
+                            <a href="#" class="d-block d-md-none">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
                         </div>
 
                         <!-- table -->
-                        <table class="table table-borderless shopping-cart-table">
+                        <table class="table table-borderless shopping-cart-table d-none d-md-block">
                             <thead>
                               <tr>
                                 <th>card</th>
@@ -424,9 +552,95 @@
                     <p class="note">Once your order is complete you will receive a link and instructions for sending the Sugarwish through Messaging or for the printed card.</p>
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <!-- order summary -->
-                    <h2>Order Summary</h2>
+                    <div class="order-summary">
+                        <h5 class="sec-title font-monte">Order Summary</h5>
+                        <div class="summary-details">
+                            <!-- order items -->
+                            <div class="order-summary-details">
+                                <h6 class="summary-title pb-1">order items</h6>
+                                <!-- 1 -->
+                                <div class="details">
+                                    <p class="count">
+                                        2-Pick Cookies
+                                        <span class="small d-gray">x 6</span>
+                                    </p>
+                                    <p class="price">$131.88</p>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="details">
+                                    <p class="count">
+                                        6-Pick Cookies
+                                        <span class="small d-gray">x 6</span>
+                                    </p>
+                                    <p class="price">$131.88</p>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="details">
+                                    <p class="count">
+                                        14-Pick Cookies
+                                        <span class="small d-gray">x 6</span>
+                                    </p>
+                                    <p class="price">$131.88</p>
+                                </div>
+                            </div>
+
+                            <!-- shipping -->
+                            <div class="order-summary-details shipping">
+                                <h6 class="summary-title pb-1">shipping</h6>
+                                <!-- 1 -->
+                                <div class="details">
+                                    <p class="count">
+                                        Shipping to USA
+                                        <span class="small d-gray">x 6</span>
+                                    </p>
+                                    <p class="price">FREE</p>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="details">
+                                    <p class="count">
+                                        Shipping to Canada
+                                        <span class="small d-gray">x 6</span>
+                                    </p>
+                                    <p class="price">$31.88</p>
+                                </div>
+                            </div>
+
+                            <!-- tc -->
+                            <div class="tc">
+                                <p class="tc-title font-monte">total cost</p>
+                                <p>$300.00</p>
+                            </div>
+                        </div>
+
+                        <!-- promo code -->
+                        <div class="promo">
+                            <input type="text" class="form-control" placeholder="Promo Code">
+                            <button class="btn btn-apply font-monte">Apply</button>
+                        </div>
+
+                        <div class="shipping-cost">
+                            <div>
+                                <input type="checkbox">
+                                <p class="d-inline-block">
+                                    Expedited shipping
+                                    <span>(+ <span class="d-gray">$10</span> )</span>
+                                </p>
+                                <p class="primary-col">What is expedited shipping?</p>
+                            </div>
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+
+                        <div class="checkout-btn">
+                            <a href="#" class="btn primary-btn ter-title btn-block font-monte">
+                                Proceed to Checkout
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
