@@ -15,16 +15,18 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .details .shopping-cart-title {
+  .details-sec {
+    margin-top: 50px;
+  }
+  .details-sec .shopping-cart-title {
     justify-content: space-between;
   }
-  .details .receipient .receipient-count {
+  .details-sec .receipient .receipient-count {
     margin-left: 5rem;
     margin-bottom: 0.5rem;
     padding-right: 2rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   .shopping-cart .mobile-view-table {
     display: none;
@@ -69,5 +71,10 @@
   }
   .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 500ms ease-in-out;
+  }
+}
+@media screen and (min-width: 768px) {
+  .table-col .promo, .table-col .bill, .table-col .checkout-btn {
+    display: none;
   }
 }/*# sourceMappingURL=responsive.css.map */

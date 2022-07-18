@@ -33,8 +33,9 @@ $light-gray: #F9F9FB;
 }
 
 // main section
-.details {
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+        .details-sec {
+            margin-top: 50px;
         .shopping-cart-title {
             justify-content: space-between;
         }
@@ -110,5 +111,14 @@ $light-gray: #F9F9FB;
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
         transition: left 500ms ease-in-out;
+    }
+}
+
+// Hiding promo, bill and checkout button
+.table-col {
+    @media screen and (min-width: 768px) {
+        .promo, .bill, .checkout-btn {
+            display: none;
+        }
     }
 }
