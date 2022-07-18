@@ -114,6 +114,9 @@ nav ul li:first-child a .nav-link-item {
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
+nav ul li a {
+  color: #2D3333 !important;
+}
 nav ul i {
   color: #D2232A;
 }
