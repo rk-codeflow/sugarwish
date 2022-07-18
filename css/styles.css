@@ -43,7 +43,7 @@ h4, h5, p {
 
 .sec-title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   line-height: 32px;
 }
 

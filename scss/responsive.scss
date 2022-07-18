@@ -122,3 +122,9 @@ $light-gray: #F9F9FB;
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .summary-sec {
+        display: none;
+    }
+}
