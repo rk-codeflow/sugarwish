@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- navbar starts -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars ham"></i>
         </button>
@@ -40,7 +40,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <svg width="30" height="30" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="30" height="30" class="d-none d-lg-block" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.0943 35.0267H3.90509C3.2602 35.0259 2.64195 34.7694 2.18595 34.3134C1.72995 33.8574 1.47343 33.2392 1.47266 32.5943V3.40509C1.47343 2.7602 1.72995 2.14195 2.18595 1.68595C2.64195 1.22995 3.2602 0.973429 3.90509 0.972656H33.0943C33.7392 0.973429 34.3574 1.22995 34.8134 1.68595C35.2694 2.14195 35.5259 2.7602 35.5267 3.40509V32.5943C35.5259 33.2392 35.2694 33.8574 34.8134 34.3134C34.3574 34.7694 33.7392 35.0259 33.0943 35.0267ZM3.90509 1.94563C3.51802 1.94563 3.1468 2.09939 2.8731 2.3731C2.59939 2.6468 2.44563 3.01802 2.44563 3.40509V32.5943C2.44563 32.9813 2.59939 33.3526 2.8731 33.6263C3.1468 33.9 3.51802 34.0537 3.90509 34.0537H33.0943C33.4813 34.0537 33.8526 33.9 34.1263 33.6263C34.4 33.3526 34.5537 32.9813 34.5537 32.5943V3.40509C34.5537 3.01802 34.4 2.6468 34.1263 2.3731C33.8526 2.09939 33.4813 1.94563 33.0943 1.94563H3.90509Z" fill="#D2232A"/>
                             <path d="M6.33752 15.0808H1.95914C1.83012 15.0808 1.70638 15.0295 1.61514 14.9383C1.52391 14.847 1.47266 14.7233 1.47266 14.5943V10.7024C1.47266 10.5734 1.52391 10.4496 1.61514 10.3584C1.70638 10.2672 1.83012 10.2159 1.95914 10.2159H6.33752C6.46655 10.2159 6.59029 10.2672 6.68152 10.3584C6.77275 10.4496 6.82401 10.5734 6.82401 10.7024C6.82401 10.8314 6.77275 10.9551 6.68152 11.0464C6.59029 11.1376 6.46655 11.1889 6.33752 11.1889H2.44563V14.1078H6.33752C6.46655 14.1078 6.59029 14.159 6.68152 14.2503C6.77275 14.3415 6.82401 14.4653 6.82401 14.5943C6.82401 14.7233 6.77275 14.847 6.68152 14.9383C6.59029 15.0295 6.46655 15.0808 6.33752 15.0808Z" fill="#D2232A"/>
                             <path d="M35.0403 15.0808H18.0133C17.8843 15.0808 17.7605 15.0295 17.6693 14.9383C17.5781 14.847 17.5268 14.7233 17.5268 14.5943C17.5268 14.4653 17.5781 14.3415 17.6693 14.2503C17.7605 14.159 17.8843 14.1078 18.0133 14.1078H34.5538V11.1889H18.0133C17.8843 11.1889 17.7605 11.1376 17.6693 11.0464C17.5781 10.9551 17.5268 10.8314 17.5268 10.7024C17.5268 10.5734 17.5781 10.4496 17.6693 10.3584C17.7605 10.2672 17.8843 10.2159 18.0133 10.2159H35.0403C35.1694 10.2159 35.2931 10.2672 35.3843 10.3584C35.4756 10.4496 35.5268 10.5734 35.5268 10.7024V14.5943C35.5268 14.7233 35.4756 14.847 35.3843 14.9383C35.2931 15.0295 35.1694 15.0808 35.0403 15.0808Z" fill="#D2232A"/>
@@ -71,7 +71,7 @@
                 </li>
 
                 <li class="nav-item ml-auto">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#" style="display: flex;align-items:center;">
                         <span>
                             We 
                             <i class="fa-solid fa-heart"></i>
@@ -96,7 +96,7 @@
     <section class="details">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8 ptb-32">
+                <div class="col-12 col-lg-8 ptb-32 table-col">
                     <div class="shopping-cart-title">
                         <h4 class="font-monte primary-title">Shopping Cart</h4>
                         <span class="sec-title">(10 items)</span>
@@ -127,7 +127,7 @@
                                 <span class="dark">total</span>
                             </p>
 
-                            <a href="#" class="d-block d-md-none">
+                            <a href="#" class="d-block d-md-none toggle-arrow" onclick="changeIcon()">
                                 <i class="fa-solid fa-angle-right"></i>
                             </a>
                         </div>
@@ -263,7 +263,7 @@
                         </table>
 
                         <!-- responsive table -->
-                        <table class="table shopping-cart-table">
+                        <table class="table shopping-cart-table mobile-view-table hide">
                             <thead>
                                 <tr>
                                     <th scope="col">card</th>
@@ -272,6 +272,7 @@
                               </thead>
 
                               <tbody>
+                                <!-- row 1-->
                                 <tr>
                                     <td>
                                         <div>
@@ -298,6 +299,7 @@
                                     </td>
                                 </tr>
 
+                                <!-- row 2-->
                                 <tr>
                                     <td>
                                         <div>
@@ -324,6 +326,7 @@
                                     </td>
                                 </tr>
 
+                                <!-- row 3-->
                                 <tr>
                                     <td>
                                         <div>
@@ -350,6 +353,7 @@
                                     </td>
                                 </tr>
 
+                                <!-- row 4-->
                                 <tr>
                                     <td>
                                         <div>
@@ -521,7 +525,7 @@
                                 <th>recipient</th>
                                 <th>delivery address</th>
                                 <th>ship date</th>
-                                <th>ship to ca</th>
+                                <th style="white-space: nowrap;">ship to ca</th>
                                 <th class="text-center">options</th>
                               </tr>
                             </thead>
@@ -531,8 +535,8 @@
                                     <td>
                                         <img src="./img/b1.png" alt="birthday card">
                                     </td>
-                                    <td>Jane Campion</td>
-                                    <td>5251 Beaumont Way, CO</td>
+                                    <td style="white-space: nowrap;">Jane Campion</td>
+                                    <td style="white-space: nowrap;">5251 Beaumont Way, CO</td>
                                     <td>12/23/2020</td>
                                     <td class="text-center">/</td>
                                     <td class="options">
@@ -548,8 +552,33 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- promo code -->
+                    <div class="promo">
+                        <input type="text" class="form-control" placeholder="Promo Code">
+                        <button class="btn btn-apply font-monte">Apply</button>
+                    </div>
+
+                    <!-- bill amount -->
+                    <div class="bill">
+                        <div>
+                            <p class="small">Order Items: $340.0</p>
+                            <p class="small">Shipping: $30</p>
+                        </div>
+
+                        <div>
+                            <p><small>Total Cost</small></p>
+                            <h6 class="font-monte">$370.80</h6>
+                        </div>
+                    </div>
+
+                    <div class="checkout-btn">
+                        <a href="#" class="btn primary-btn ter-title btn-block font-monte">
+                            Proceed to Checkout
+                        </a>
+                    </div>
                     
-                    <p class="note">Once your order is complete you will receive a link and instructions for sending the Sugarwish through Messaging or for the printed card.</p>
+                    <p class="note d-none d-md-block mt-3">Once your order is complete you will receive a link and instructions for sending the Sugarwish through Messaging or for the printed card.</p>
                 </div>
 
                 <div class="col-12 col-lg-4">
@@ -649,7 +678,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script js -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

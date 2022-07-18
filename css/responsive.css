@@ -21,5 +21,53 @@
   .details .receipient .receipient-count {
     margin-left: 5rem;
     margin-bottom: 0.5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shopping-cart .mobile-view-table {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+    background: #D2232A;
+    z-index: 10;
+  }
+  .navbar-collapse ul li {
+    width: 100%;
+  }
+  .navbar-collapse ul li:nth-child(4) {
+    margin-left: 0 !important;
+  }
+  .navbar-collapse ul li:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+  .navbar-collapse ul li a {
+    color: white !important;
+  }
+  .navbar-collapse ul li a i {
+    color: white;
+  }
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
   }
 }/*# sourceMappingURL=responsive.css.map */
